@@ -4,7 +4,7 @@ let Book = require('./book_model');
 const app = express();
 const mongoose = require('mongoose');
 
-let db_url = 'mongodb://192.168.191.3:27017/LibraryApp';
+let db_url = 'mongodb://localhost:27017/LibraryApp';
 mongoose.connect(db_url, { useNewUrlParser: true });
 
 mongoose.Promise = global.Promise;
