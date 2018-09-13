@@ -284,4 +284,18 @@ As you can see book with that id was deleted from the database.
 
 # Conclusion
 
-This article demonstrated how you can build simple REST API using Node.js and MongoDB. Full code is available at https://github.com/pandeybk/hello-world-nodejs for your reference.
+This article demonstrated how you can build simple REST API using Node.js and MongoDB. Full code is available at https://github.com/pandeybk/hello-world-nodejs for your reference. If you want to directly run the application without building it yourself, first clone the repository using following git command
+
+```bash
+git clone https://github.com/pandeybk/hello-world-nodejs/
+```
+
+Then simple goto `hello-world-nodejs` directory and install dependencies 
+```bash
+cd hello-world-nodejs
+npm install
+```
+And finally launch the main application using
+```bash
+node main.js
+```
