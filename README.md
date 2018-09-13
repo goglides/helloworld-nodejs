@@ -39,9 +39,31 @@ MongoDB is an open-source, document database designed with both scalability and 
 MongoDB instalation is also depended on operating system, you can follow the official steps for MongoDB installation
 
 -  [Install MongoDB Community Edition on Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+Once Installed Create **data**, **data\db**, **log** directories and **mongo.config** file under **C:\mongodb**
+Add the following lines in **mongo.config** file
+```ini
+port=27017
+dbpath=C:\mongodb\data\db\
+logpath=C:\mongodb\log\mongo.log
+```
+To start the mongodb server, goto **C:\mongodb** and use following command
+```bash
+mongod.exe --config="C:\mongodb\mongo.config"
+```
 - [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
+If you installed MongoDB using brew, you can use following command to start the MongoDB Server
+```bash
+brew services start mongodb
+```
 - [Install MongoDB Community Edition on Linux](https://docs.mongodb.com/manual/administration/install-on-linux/)
 If you're not familiar with MongoDB, it's recommended that you read the [Official Tutorial](https://docs.mongodb.com/manual/tutorial/getting-started/)
+To start MongoDB server on Linux you can use following command
+```bash
+sudo systemctl start mongodb
+```
+## Starting the MongoDB Server
+### 
 
 # Building a CRUD application with Node.js and MongoDB
 You'll build simple REST API using Node.js for a book library. Finished project will be able to Create, Remove, Update and Delete books in a library but before you can start building this CRUD application, you'd need to install bunch of dependencies from npm.
