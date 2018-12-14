@@ -1,40 +1,50 @@
+author:            Balkrishna Pandey
+summary:           Hello World NodeJS!
+id:                hello-world-nodejs
+categories:        nodejs,helloworld
+environments:      web
+status:            Published
+feedback link:     https://github.com/goglidescodelabs/helloworld-nodejs
+analytics account: 0
 
-# What is Node.js?
+# Hello World NodeJS
+
+## Introduction
 
 Node.js is a javascript environment built for creating traditional programs. There is no HTML, there is no DOM, there is no browser at all. The JavaScript code executes directly from a .js file. Node.js essentially lets you use javascript just like you use ruby, python or java. It provides a set of built in libraries for performing common tasks such as file management or networking.
 It's extremely popular right now because JavaScript is one of the most popular programming language specially for web apps, and anyone who knows JavaScript in the browser can learn to use JavaScript in Node.js quite easily. Node.js includes a built in libraries for creating web servers. You can create a single page website in less than a dozen lines of code.
 It also scales exceptionally well, with less effort, compared to PHP or RoR. A single Node.js process can handle tens of thousands of simultaneous requests before experiencing any performance lag. If you're familiar with Java, it's very similar to Java Virtual Machine (JVM). JVM provides a runtime environment for Java applications while Node.js provides runtime environment for JavaScript environment.
 
  
-# How to install Node.js?
+## How to install Node.js?
 
 Installation procedure for Node.js depends on your operating system
 
-## Installation on windows
+### Installation on windows
 
 - Open the official page for  [Node.js downloads](https://nodejs.org/en/download//)  and download Node.js for Windows by clicking the **Windows Installer** option
 - Run the downloaded Node.js  `.msi`  Installer - including accepting the license, selecting the destination, and authenticating for the install. ( This requires Administrator privileges, and you may need to authenticate)
 - To ensure Node.js has been installed, open `Command Prompt` or `Powershell` and run  `node -v`  in your console - you should get something like  `v8.12.0`
 - Update your version of npm with  `npm install npm --global`
 - Congratulations - you've now got Node.js installed.
-## Installation on macOS
+### Installation on macOS
 -  Open the official page for [Node.js Downloads page](https://nodejs.org/en/download/) and download Node.js for macOS by clicking the "Macintosh Installer" option
 - Run the downloaded Node.js  `.pkg`  Installer
 -  Run the installer, including accepting the license, selecting the destination, and authenticating for the install.
 -  You're finished! To ensure Node.js has been installed, run  `node -v`  in your terminal - you should get something like  `v8.12.0`
-## Installation on Linux
+### Installation on Linux
 - Installation on Linux is highly depended on distribution you're using, I'll highly recommend using your package manager to install Node.js
 - Open the official page for [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) and follow guide for your current distribution.
 
-# What is NPM?
+## What is NPM?
 You must be wondering what's `npm`? Well `npm` stands for Node Package Manager, it's a utility which can be used to install libraries and other software in Node.js ecosystem from the command line interface. So, if you want to install any libraries you'd run `npm install <package-name>` from the terminal  and it will magically fetch the files from npm registry in `node_modules/` directory from where command was run.
 
-# What is MongoDB?
+## What is MongoDB?
 
 MongoDB is an open-source, document database designed with both scalability and developer agility in mind. MongoDB are kind of like key-value stores, Instead of storing data in rows and columns as one would with a relational database such as MySQL, MSSQL, etc, MongoDB stores JSON documents in collections with dynamic schemas. MongoDB's document makes it easy for you to store and combine data of any structure
 
 
-# MongoDB installation
+### MongoDB installation
 
 MongoDB instalation is also depended on operating system, you can follow the official steps for MongoDB installation
 
@@ -282,7 +292,7 @@ curl --header "Content-Type: application/json"   --request POST   --data '{"id":
 
 As you can see book with that id was deleted from the database.
 
-# Conclusion
+## Conclusion
 
 This article demonstrated how you can build simple REST API using Node.js and MongoDB. Full code is available at https://github.com/pandeybk/hello-world-nodejs for your reference. If you want to directly run the application without building it yourself, first clone the repository using following git command
 
