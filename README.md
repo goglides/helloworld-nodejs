@@ -294,7 +294,7 @@ As you can see book with that id was deleted from the database.
 
 ## Conclusion
 
-This article demonstrated how you can build simple REST API using Node.js and MongoDB. Full code is available at https://github.com/pandeybk/hello-world-nodejs for your reference. If you want to directly run the application without building it yourself, first clone the repository using following git command
+This article demonstrated how you can build simple REST API using Node.js and MongoDB. Full code is available at https://github.com/goglides/helloworld-nodejs for your reference. If you want to directly run the application without building it yourself, first clone the repository using following git command
 
 ```bash
 git clone https://github.com/pandeybk/hello-world-nodejs/
